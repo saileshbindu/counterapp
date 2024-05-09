@@ -3,18 +3,18 @@ import { useState } from "react";
 const Counter = () =>{
     const [count, setCount] = useState(0);
 
-    const handleInc =() =>{
+    const increment =() =>{
         setCount(count + 1)
     }
-    const handleDec = () =>{
+    const decrement = () =>{
         setCount(count - 1)
     }
     return(<div>
         <h1>Counter App</h1>
-        <p>counter: {count}</p>
+        <p>Count: {count}</p>
        <div>
-       <button onClick={handleInc}>Increment</button>
-       <button onClick={handleDec}>Decrement</button>
+       <button onClick={increment}>Increment</button>
+       <button onClick={decrement}>Decrement</button>
        </div>
     </div>)
 }
